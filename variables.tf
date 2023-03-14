@@ -5,5 +5,12 @@ variable "refloc" {
   default = "centralindia"
 }
 variable "refvnet" {
-  default = "vnet"
+    default = "myvmvnet"
+}
+variable "refaddrespace" {
+    default = ["10.8.0.0/16"]
+}
+variable "refsubnet" {
+    default = "myvmsubnet"
+  
 }
