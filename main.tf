@@ -50,8 +50,8 @@ resource "azurerm_network_security_group" "ref-nsg" {
   }  
   
 }
-resource "azurerm_virtual_machine" "ref-vm"{
-  name                  = "myVM"
+resource "azurerm_virtual_machine" "ref-vm1"{
+  name                  = "myVM1"
   location              = azurerm_resource_group.ref-rg.location
   resource_group_name   = azurerm_resource_group.ref-rg.name
   network_interface_ids = [azurerm_network_interface.ref-nic.id]
